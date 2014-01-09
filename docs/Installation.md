@@ -15,6 +15,7 @@ Linux:
 * Use your distribution's package manager.
 
 ## Install node.js
+
 * Version 0.10.0 or greater is required.
 
 Windows:
@@ -25,10 +26,10 @@ OS X & Linux:
 * Available from [nodejs.org](http://nodejs.org)
 * But we recommend installation via [nvm](https://github.com/creationix/nvm)
 
-    curl https://raw.github.com/creationix/nvm/master/install.sh | sh
-    source ~/.bash_profile
-    nvm install 0.10
-    nvm alias default 0.10
+        curl https://raw.github.com/creationix/nvm/master/install.sh | sh
+        source ~/.bash_profile
+        nvm install 0.10
+        nvm alias default 0.10
 
 ## iOS Dependencies
 
@@ -51,9 +52,11 @@ OS X & Linux:
 
         git clone git://github.com/MobileChromeApps/mobile-chrome-apps.git
         cd mobile-chrome-apps
+        # This next step may take over a minute
         ./mca init
-        # Optionally, to add global mca command into PATH:
+        # Optional - add the mca command globally:
         npm link
+
 
 * On Windows, remove the "./" prefix from the last line.
 * The `npm link` step is optional, but will add `mca` command to a global PATH if you have npm (node package manager) set up correctly.
